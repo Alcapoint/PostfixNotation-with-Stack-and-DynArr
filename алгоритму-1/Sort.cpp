@@ -92,7 +92,7 @@ void PostfixNotation(const char* _infix, char* _postfix)
 	}
 	else
 	{
-		cout << "\nÎøèáêà! Ñòðîêà Ïóñòà! Íàæìèòå Enter, ÷òîáû íà÷àòü ñíà÷àëà." << endl;
+		cout << "\n Ð¡Ñ‚Ñ€Ð¾ÐºÐ° Ð¿ÑƒÑÑ‚Ð°" << endl;
 	};
 
 	while (st_ptr != 0)		
@@ -113,10 +113,10 @@ char pop(char* _stack, int& _ptr)
 }
 int main() {
 	setlocale(LC_ALL, "Rus");
-	cout << "Ââåäèòå âûðàæåíèå: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
 	char str_infix[MAX_LEN];
 	gets_s(str_infix); 
 	char str_postfix[MAX_LEN];
 	PostfixNotation(str_infix, str_postfix);
-	cout << "Ïîñòôèêñíàÿ ôîðìà âûðàæåíèÿ: " << str_postfix << endl;
+	cout << "ÐŸÐ¾ÑÑ‚Ñ„Ð¸ÐºÑÐ½Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð° Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ: " << str_postfix << endl;
 }
